@@ -16,15 +16,21 @@ library(huxtable)
 
 class: center, middle, inverse
 
-# IMPROVED UNDERSTANDING OF FISHERIES & ECOSYSTEMS FROM NOISY & DISPARATE DATA
+# RESEARCH VISION, INTERESTS & APPROACHES
 ## Mark Scheuerell
 _Northwest Fisheries Science Center<br>National Marine Fisheries Service<br>_
 <br>
 _School of Aquatic and Fishery Sciences<br>University of Washington<br>_
 
-.futnote[`r icon::fa("envelope")` mark.scheuerell@noaa.gov]
+---
 
-.citation[`r icon::fa("twitter")` @mark_scheuerell]
+# Should address (in 10 min):
+
+## Research vision
+
+## Interests
+
+## Approach you would bring
 
 ---
 
@@ -88,7 +94,14 @@ class: middle, inverse
 ---
 
 class: middle, inverse
+
 # Motivation: Inform management decisions
+
+---
+
+class: middle, inverse
+
+# Need: Forecasts of future ecosystem services
 
 ---
 
@@ -374,7 +387,7 @@ $$\LARGE \mathbf{x}_t = \mathbf{B} \mathbf{x}_{t-1} + \mathbf{w}_t \\
 
 class: inverse, center, middle
 
-# How do I actually do this?
+# How does one actually do this?
 
 ---
 
@@ -387,6 +400,12 @@ class: inverse, center, middle
 .footnoteSm.gray-text[
 <sup>\*</sup>Holmes, Ward, Scheuerell (2018) _Analysis of multivariate time-series using the MARSS package_
 ]
+
+---
+
+class: inverse, center, middle
+
+# SOME EXAMPLES
 
 ---
 
@@ -453,7 +472,7 @@ background-size: 130%
 # Supplementation effect is rather subtle
 
 .blue-text.center[
-### Mean increase of only 3.3% over ~25 years
+### Mean increase of 3.3% over ~25 years
 ]
 
 .citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol* &nbsp; 5:2115–2125]
@@ -497,13 +516,6 @@ background-size: 85%
 # Development
 
 .blue-text[https://github.com/mdscheuerell/]
-
-# Image sources
-
-.blue-text[
-Carnival: *Frank Kovalchek (2010)*   
-Snake oil: *The Register*  
-]
 
 ---
 
