@@ -87,6 +87,11 @@ class: middle, inverse
 
 ---
 
+class: middle, inverse
+# Motivation: Inform management decisions
+
+---
+
 class: middle
 
 > # We love to forecast, but we're not very good at it.
@@ -99,7 +104,7 @@ class: middle
 
 class: inverse, middle, center
 
-# The signal and the noise
+# Separating the signal from the noise
 
 ---
 
@@ -199,12 +204,10 @@ text("Time or space", x=cc/2, y=-ss/2+ss*2, xpd=NA, pos=1, cex=2)
 
 ---
 
-class: frimg, center, bottom, black-back
-background-image: url(figs/venice_carnival.jpg)
-background-size: 100%
+class: center, middle, inverse
 
-## .white-text[Revealing the true state requires observations]
-### .black-text[-]
+# Revealing the state of nature
+# requires some observations
 
 ---
 
@@ -387,42 +390,11 @@ class: inverse, center, middle
 
 ---
 
-class: frimg, inverse-black
-background-image: url(figs/snake_oil.jpg)
-background-size: cover
-
----
-
 # Conservation of Pacific salmon
 
 .blue-text[
 ## More than one-half of the stocks in the lower 48 are listed under the Endangered Species Act
 ]
-
----
-
-class: center
-
-### .wh-text[-]
-
-.pull-left.middle[
-.green-text[
-# .large[ Hydropower ]
-]
-.orange-text[
-# .large[ Harvest ]
-]
-]
-.pull-right[
-.purple-text[
-# .large[ Habitat ]
-]
-.blue-text[
-# .large[ Hatcheries ]
-]
-]
-
-# .large[ The 4 H's ]
 
 ---
 
@@ -470,35 +442,6 @@ background-position: 50% 30%
 background-size: 77%
 
 # Ad hoc design
-
----
-
-# Complications for analysis
-
-.green-text[
-## No randomized design
-]
-.blue-text[
-## Different start/stop & duration
-]
-.orange-text[
-## Changing variance & correlated errors
-]
-.purple-text[
-## Multiple agencies & tribes
-]
-
----
-
-# Our model for supplementation
-
-## .blue-text.under[State model]
-
-## .blue-text[Density]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i>-1</sub> + .orange-text[Supplementation × I]<sub><i>t</i></sub> + .gray-text[error]<sub><i>t</i></sub>
-
-## .purple-text.under[Observation model]
-
-## .purple-text[Data]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i></sub> + .red-text[error]<sub><i>t</i></sub>
 
 ---
 
@@ -555,25 +498,11 @@ background-size: 85%
 
 .blue-text[https://github.com/mdscheuerell/]
 
----
-
-# Slide deck
-
-.blue-text[https://github.com/mdscheuerell/UAF2018]
-
 # Image sources
 
 .blue-text[
-MN map: *Chandler O’Leary (2013)*  
-WI map: *Cat's Meow Village*  
-LIDAR: *NOAA*  
-DNA: *fizzgig (2016)*  
-Janet Leigh: *Paramount Studios*  
 Carnival: *Frank Kovalchek (2010)*   
 Snake oil: *The Register*  
-Shakespeare's plays: *Sir John Gilbert (1849)*  
-Robin Hood: *John Escott*  
-DWH: *US Coast Guard*  
 ]
 
 ---
