@@ -1,14 +1,21 @@
 ---
 title: ''
-output: pdf_document
+output: 
+  pdf_document:
+    extra_dependencies: ["fancyhdr", "datetime"]
 geometry: margin=1in
+papersize: letter
 fontsize: 11pt
 urlcolor: black
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+\pagestyle{fancy}
+\fancyhead[LO,LE]{MD Scheuerell}
+\fancyhead[CO,CE]{}
+\fancyhead[RO,RE]{Academic overview}
+\fancyfoot[LO,LE]{}
+\fancyfoot[CO,CE]{\thepage}
+\fancyfoot[RO,RE]{}
 
 ### Research Interests and Approach
 
@@ -16,11 +23,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 I am motivated by questions related to how natural and anthropogenic forces interact to affect the structure of aquatic ecosystems and the services we derive from them. Increasing demands on our natural resources and a changing climate will interact in ways no one can knowingly predict. I see our greatest opportunities for successfully dealing with the uncertainties about the future as coming directly from our ability to (1) separate the signals from the noise in our contemporary and historical data, and (2) identify the underlying sources of the noise. Thus, much of my current research focuses largely on the development of quantitative methods and their application to issues concerning the conservation of at-risk species and the management of commercially important resources.
 
-For the past decade I have been collaborating with government and academic scientists to develop statistical models and associated software for the analysis of multivariate time series and spatial data. The general idea is to use specific forms of hierarchical models to uniquely model the true states of nature, such as density or location, and our observations of those states. This allows us to answer questions related to (1) the number of unique environmental processes from which the observed data arise, (2) the extent to which the observed data map onto each process, and (3) the magnitude of process noise relative to observation noise. We have extended these methods to studies of the effects of hatchery supplementation on endangered Pacific salmon, large-scale patterns in the abundance of groundfishes, and climate-induced changes in marine and freshwater food web interactions. The associated packages we have developed for the R programming language have been widely used by the broader scientific community as well.
+For the past decade I have been collaborating with government and academic scientists to develop statistical models and associated software for the analysis of multivariate time series and spatial data. The general idea is to use specific forms of hierarchical models to uniquely model the true states of nature, such as density or location, and our observations of those states. This allows us to answer questions related to (1) the number of unique environmental processes from which the observed data arise, (2) the extent to which the observed data map onto each process, and (3) the magnitude of process noise relative to observation noise. We have extended these methods to studies of the effects of hatchery supplementation on endangered Pacific salmon, large-scale patterns in the abundance of groundfishes, and climate-induced changes in marine and freshwater food web interactions. The associated packages we have developed for the __`R`__ programming language have been widely used by the broader scientific community as well.
 
 More recently my colleagues and I have been developing integrated population models (IPMs) for steelhead in Puget Sound, coho on the Oregon Coast, and Chinook salmon in the Columbia River basin. Although IPMs are relatively common in assessments of birds and marine fishes, they are relatively new to salmon research. IPMs use a joint likelihood based on all of the available data, such that model outputs match the data rather than first pre-processing the data to match the model. In contrast to other population models, IPMs use the same model for the fitting and projection phases of the analysis, which means they more accurately and precisely account for all of the process and observation components of variance. We have used our IPMs to answer questions related to the anticipated effects of changing harvest, hatchery and flow management policies in light of uncertainty about future environmental variability.
 
-I have also become much more interested in the socio-economic side of fisheries management and conservation of at-risk species. For example, I am presently working with an economist at Oregon State University on a valuation for estuary restoration work to benefit coho salmon populations. These collaborations have helped me to appreciate the different insights to be gained when addressing problems from a non-ecological viewpoint.
+I have also become much more interested in the socio-economic side of fisheries management and conservation of at-risk species. For example, I am presently working with an economist at Oregon State University on a valuation for estuary restoration work to benefit coho salmon populations. Collaborations such as this one have helped me to appreciate the different insights to be gained when addressing problems from a non-ecological viewpoint.
 
 \vspace{-10pt}
 
@@ -32,7 +39,7 @@ My approach to teaching is guided by my philosophy that an education is the best
 
 I always enjoyed mathematics as a student, but a variety of challenging quantitative courses during my Ph.D. studies really opened my eyes to a whole new world of applied math and statistics. Notably, the common thread throughout those courses was the instructors’ strong reliance on computer exercises for demonstrating concepts like simulating population dynamics or estimating parameters in statistical models. In addition to witnessing firsthand how changing parameters or model forms can affect outputs and inference, I also learned valuable programming skills. Thus, I have also come to rely heavily on hands-on, in-class computer exercises when teaching everything from small workshops to full courses.
 
-We now have software and platforms, such as Markdown and GitHub, which allow us to follow best practices with respect to what many call “data science”. That is, in an age of increasing journal retractions and scientists’ inability to successfully reproduce previous findings, it is increasingly important that we document every step as we move from raw data, to analyses, to figures and tables. I would impress upon my students the critical importance of this and teach them the necessary tools and protocols.
+We now have software and platforms, such as Markdown and GitHub, which allow us to follow best practices with respect to what many call “data science”. That is, in an age of increasing journal retractions and scientists’ inability to successfully reproduce previous findings, it is increasingly important that we document every step of our workflow as we move from raw data, to analyses, to figures and tables. I would impress upon my students the critical importance of this and teach them the necessary tools and protocols.
 
 I have experienced a number of unique challenges and opportunities as a government scientist for more than 15 years, which afford me some insights that others may not share. Most students finish graduate school with a good understanding of how to write grants, do research, and present their work in oral or written form. Unfortunately, however, many do not receive information on alternative career options, how to manage people and money, and opportunities for public outreach and service. I am committed to training well-rounded scientists who possess a diverse set of skills and broad understanding of their field.
 
@@ -42,6 +49,6 @@ I have experienced a number of unique challenges and opportunities as a governme
 
 \vspace{-10pt}
 
-As a white male I am regularly aware of the many biases that exist in our field, and I have come to appreciate some of the challenges faced by other groups trying to get a foothold in science. Therefore, I strive to use my position of relative privilege to better assist those who are less fortunate in achieving their academic and professional goals. For example, I am currently a mentor with EcologyPlus, which connects diverse students and early career scientists with a support community of peers and professionals, and is sponsored by NSF’s INCLUDES (Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Science) Program.
+As a white male I am regularly aware of the many biases that exist in our field, and I have come to appreciate some of the challenges faced by other groups trying to get a foothold in science. Therefore, I strive to use my position of relative privilege to better assist underrepresented students in achieving their academic and professional goals. For example, I am currently a mentor with EcologyPlus, which connects diverse students and early career scientists with a support community of peers and professionals, and is sponsored by NSF’s INCLUDES (Inclusion across the Nation of Communities of Learners of Underrepresented Discoverers in Engineering and Science) Program.
 
-I am committed to increasing diversity by explicitly recruiting graduate students, post-docs, and staff from diverse backgrounds. One important way to increase diversity is to focus on inclusion. As the father of two children with developmental and physical disabilities, I work daily to insure that they can share the same experiences as everyone else. We must move towards a position of recognizing people for their strengths rather than focusing on their weaknesses, if we are to truly integrate everyone into our society. By creating an open, welcoming space that explicitly acknowledges the differences among us, we can better engage with one another and create positive outcomes for all. As such, I am absolutely committed to a workplace free from any form of harassment or misconduct. Simply stated, I want my students to become not just good scientists, but good citizens as well.
+I am committed to increasing diversity by explicitly recruiting graduate students, post-docs, and staff from diverse backgrounds. One important way to increase diversity is to focus on inclusion. As the father of two children with developmental and physical disabilities, I work daily to insure that they can share the same experiences as everyone else. If we are to truly integrate everyone into our society, must move towards a position of recognizing people for their strengths rather than focusing on their weaknesses. I believe that when we create an open, welcoming space that explicitly acknowledges the differences among us, we can better engage with one another and create positive outcomes for all. As such, I am absolutely committed to a workplace free from any form of harassment or misconduct. Simply stated, I want my students to not only become good scientists, but good citizens as well.
