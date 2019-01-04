@@ -8,9 +8,6 @@ fontsize: 10pt
 urlcolor: black
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 \newdateformat{mydate}{\THEYEAR.\twodigit{\THEMONTH}}
 
@@ -392,7 +389,7 @@ NOAA Fisheries And The Environment (FATE) Program ($147k) 2015-2016. Improving s
 
 Arctic-Yukon-Kuskokwim Sustainable Salmon Initiative ($340k) 2013-2014. Multivariate analysis of factors affecting AYK Chinook salmon (co-PI with Hilborn, Schindler, Mantua)
 
-NSF-NOAA Comparative Analysis of Marine Ecosytem Organization (CAMEO) Program ($347k) 2009-2010. New statistical tools for analyzing community dynamics with applications to marine zooplankton (co-PI with Hampton, Holmes, Ward, Katz)
+NSF-NOAA Comparative Analysis of Marine Ecosystem Organization (CAMEO) Program ($347k) 2009-2010. New statistical tools for analyzing community dynamics with applications to marine zooplankton (co-PI with Hampton, Holmes, Ward, Katz)
 
 BPA FCRPS Biological Implementation Program ($299k) 2007-2009. Evaluating density-dependent effects of hatchery production on wild salmon (sole PI)
 
@@ -475,7 +472,7 @@ Mentor, Stream Resilience Research Coordination Network, Working Group 2 - Time 
 
 Analyst, U.S. Departments of Commerce and Justice, Deepwater Horizon National Resource Damage Assessment (2014-2015)
 
-Member, Chinook Salmon Expert Panel, Artic-Yukon-Kuskokwim Sustainable Salmon Initiative (2011-2012)
+Member, Chinook Salmon Expert Panel, Arctic-Yukon-Kuskokwim Sustainable Salmon Initiative (2011-2012)
 
 Member, Expert Advisory Panel, Pacific Salmon Commission Bilateral Scientific Workshop to Examine the Decline in Fraser River Sockeye (2010)
 
