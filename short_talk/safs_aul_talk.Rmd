@@ -24,16 +24,6 @@ _School of Aquatic and Fishery Sciences<br>University of Washington<br>_
 
 ---
 
-# Should address (in 10 min):
-
-## Research vision
-
-## Interests
-
-## Approach you would bring
-
----
-
 # Acknowledgments
 
 ### .blue-text[ Elizabeth Holmes, Jim Thorson, Eric Ward ] (NMFS)
@@ -101,7 +91,7 @@ class: middle, inverse
 
 class: middle, inverse
 
-# Need: Forecasts of future ecosystem services
+# Need: Forecasts of future services
 
 ---
 
@@ -132,6 +122,48 @@ class: inverse, middle, center
 .orange-text.right[
 ## Ecological portfolios
 ]
+
+---
+
+# Current research foci
+
+.green-text[
+## Models for spatio-temporal data
+]
+
+Spatial Factor Analysis .small[(Thorson et al. 2015)]
+
+Dynamic Factor Analysis .small[(Ohlberger et al. 2016, Goertler et al. 2016)]
+
+Joint Dynamic Species Distribution Models .small[(Thorson et al. 2016)]
+
+---
+
+# Current research foci
+
+.blue-text[
+## Integrated population models
+]
+
+Columbia River Chinook salmon .small[(Buhle et al. 2018)]
+
+Skagit River steelhead .small[(Scheuerell et al. _in review_)]
+
+Oregon Coast coho salmon .small[(Scheuerell et al. _in prep_)]
+
+---
+
+# Current research foci
+
+.orange-text[
+## Ecological portfolios
+]
+
+Spatial variation buffers juvenile salmon .small[(Thorson et al. 2013)]
+
+Performance of fisheries across N Am .small[(Griffiths et al. 2014)]
+
+Spatial heterogeneity in groundfishes .small[(Thorson et al. 2018)]
 
 ---
 
