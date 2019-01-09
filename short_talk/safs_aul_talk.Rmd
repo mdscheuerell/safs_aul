@@ -83,6 +83,37 @@ class: middle, inverse
 
 ---
 
+# The forces may be
+
+## .green-text[
+biological (food web interactions, harvest)
+]
+## .blue-text[
+physical (climate, habitat modification)
+]
+## .orange-text[
+chemical (ocean acidification, contaminants)
+]
+
+---
+
+# The services can be
+
+## .green-text[
+provisioning (food production)
+]
+## .blue-text[
+supporting (nutrient cycling)
+]
+## .orange-text[
+regulating (flood control)
+]
+## .purple-text[
+cultural (spiritual benefits)
+]
+
+---
+
 class: middle, inverse
 
 # Motivation: Inform management decisions
