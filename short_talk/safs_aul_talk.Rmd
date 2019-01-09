@@ -16,7 +16,7 @@ library(huxtable)
 
 class: center, middle, inverse
 
-# RESEARCH VISION, INTERESTS & APPROACHES
+# RESEARCH VISION, INTERESTS & APPROACH
 ## Mark Scheuerell
 _Northwest Fisheries Science Center<br>National Marine Fisheries Service<br>_
 <br>
@@ -131,21 +131,7 @@ class: middle
 
 class: inverse, middle, center
 
-# Separating the signal from the noise
-
----
-
-# Current research foci
-
-.green-text[
-## Models for spatio-temporal data
-]
-.blue-text.center[
-## Integrated population models
-]
-.orange-text.right[
-## Ecological portfolios
-]
+# Separating the _signal_ from the _noise_
 
 ---
 
@@ -155,11 +141,11 @@ class: inverse, middle, center
 ## Models for spatio-temporal data
 ]
 
-Spatial Factor Analysis .small[(Thorson et al. 2015)]
+Spatial Factor Analysis .small.gray-text[(Thorson et al. 2015)]
 
-Dynamic Factor Analysis .small[(Ohlberger et al. 2016, Goertler et al. 2016)]
+Dynamic Factor Analysis .small.gray-text[(Ohlberger et al. 2016, Goertler et al. 2016)]
 
-Joint Dynamic Species Distribution Models .small[(Thorson et al. 2016)]
+Joint Dynamic Species Distribution Models .small.gray-text[(Thorson et al. 2016)]
 
 ---
 
@@ -169,11 +155,11 @@ Joint Dynamic Species Distribution Models .small[(Thorson et al. 2016)]
 ## Integrated population models
 ]
 
-Columbia River Chinook salmon .small[(Buhle et al. 2018)]
+Columbia River Chinook salmon .small.gray-text[(Buhle et al. 2018)]
 
-Skagit River steelhead .small[(Scheuerell et al. _in review_)]
+Skagit River steelhead .small.gray-text[(Scheuerell et al. _in review_)]
 
-Oregon Coast coho salmon .small[(Scheuerell et al. _in prep_)]
+Oregon Coast coho salmon .small.gray-text[(Scheuerell et al. _in prep_)]
 
 ---
 
@@ -183,11 +169,11 @@ Oregon Coast coho salmon .small[(Scheuerell et al. _in prep_)]
 ## Ecological portfolios
 ]
 
-Spatial variation buffers juvenile salmon .small[(Thorson et al. 2013)]
+Spatial variation buffers juvenile salmon .small.gray-text[(Thorson et al. 2013)]
 
-Performance of fisheries across N Am .small[(Griffiths et al. 2014)]
+Performance of salmon fisheries across N Am .small.gray-text[(Griffiths et al. 2014)]
 
-Spatial heterogeneity in groundfishes .small[(Thorson et al. 2018)]
+Spatial heterogeneity in groundfishes .small.gray-text[(Thorson et al. 2018)]
 
 ---
 
@@ -459,6 +445,47 @@ class: inverse, center, middle
 
 ---
 
+# Lots of teaching & outreach
+
+## .green-text[Formal university courses]
+
+## .blue-text[Workshops at national conferences]
+
+## .orange-text[Online vignettes]
+
+## .purple-text[One-on-one mentoring]
+
+
+---
+
+# Open science
+
+.blue-text[
+## I'm dedicated to open, reproducible research
+
+## As a public servant my work should be accessible
+]
+
+---
+
+# Open science
+
+.blue-text[
+## I'm dedicated to open, reproducible research
+
+## As a public servant my work should be accessible
+]
+
+# Development
+
+.blue-text[## https://github.com/mdscheuerell/]
+
+---
+
+class: black-back
+
+---
+
 class: inverse, center, middle
 
 # SOME EXAMPLES
@@ -559,20 +586,3 @@ background-size: 85%
 
 .citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol* &nbsp; 5:2115–2125]
 
----
-
-# Open science
-
-.blue-text[
-## I'm dedicated to open, reproducible research
-
-## As a public servant my work should be accessible
-]
-
-# Development
-
-.blue-text[https://github.com/mdscheuerell/]
-
----
-
-class: black-back
