@@ -26,21 +26,9 @@ _School of Aquatic and Fishery Sciences<br>University of Washington<br>_
 
 # Acknowledgments
 
-### .blue-text[ Elizabeth Holmes, Jim Thorson, Eric Ward ] (NMFS)
-
-### .blue-text[ Eric Buhle, Kevin See ] (Quantitative Consultants, Inc)
-
-### .blue-text[ Stephanie Hampton, Steve Katz ] (Washington St Univ)
-
-### .blue-text[ Daniel Schindler, Jan Ohlberger ] (Univ Washington)
-
-### .blue-text[ Brice Semmens ] (Scripps)
-
----
-
-# Acknowledgments
-
 .blue-text[
+## Colleagues
+
 ## Post-docs
 
 ## Grad students
@@ -85,31 +73,36 @@ class: middle, inverse
 
 # The forces may be
 
-## .green-text[
-biological (food web interactions, harvest)
+.green-text[
+## biological (food web interactions, harvest)
 ]
-## .blue-text[
-physical (climate, habitat modification)
+
+.blue-text[
+## physical (climate, habitat modification)
 ]
-## .orange-text[
-chemical (ocean acidification, contaminants)
+
+.orange-text[
+## chemical (ocean acidification, contaminants)
 ]
 
 ---
 
 # The services can be
 
-## .green-text[
-provisioning (food production)
+.green-text[
+## provisioning (food production)
 ]
-## .blue-text[
-supporting (nutrient cycling)
+
+.blue-text[
+## supporting (nutrient cycling)
 ]
-## .orange-text[
-regulating (flood control)
+
+.orange-text[
+## regulating (flood control)
 ]
-## .purple-text[
-cultural (spiritual benefits)
+
+.purple-text[
+## cultural (spiritual benefits)
 ]
 
 ---
@@ -131,7 +124,7 @@ class: middle
 > # We love to forecast, but we're not very good at it.
 
 .right[
-## - Nate Silver .wh-text["----"]
+## - Nate Silver (2015)
 ]
 
 ---
