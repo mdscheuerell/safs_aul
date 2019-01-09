@@ -109,13 +109,15 @@ class: middle, inverse
 
 class: middle, inverse
 
-# Motivation: Inform management decisions
+# Motivation:
+# Inform management decisions
 
 ---
 
 class: middle, inverse
 
-# Need: Forecasts of future services
+# Need:
+# Forecasts of future services
 
 ---
 
@@ -129,9 +131,16 @@ class: middle
 
 ---
 
-class: inverse, middle, center
+class: inverse, middle
 
-# Separating the _signal_ from the _noise_
+# Struggle:
+# Separating the signal from the noise
+
+---
+
+class: inverse, center, middle
+
+# MY INTERESTS
 
 ---
 
@@ -174,6 +183,12 @@ Spatial variation buffers juvenile salmon .small.gray-text[(Thorson et al. 2013)
 Performance of salmon fisheries across N Am .small.gray-text[(Griffiths et al. 2014)]
 
 Spatial heterogeneity in groundfishes .small.gray-text[(Thorson et al. 2018)]
+
+---
+
+class: inverse, center, middle
+
+# MY APPROACH
 
 ---
 
@@ -435,7 +450,7 @@ class: inverse, center, middle
 
 # Many software options
 
-## .green-text[Canned **R** packages] (dlm, vars, MARSS<sup>*</sup>)
+## .green-text[**R** packages] (dlm, vars, MARSS<sup>*</sup>)
 
 ## .blue-text[Code-your-own] (JAGS, Stan, greta)
 
@@ -447,7 +462,7 @@ class: inverse, center, middle
 
 # Lots of teaching & outreach
 
-## .green-text[Formal university courses]
+## .green-text[Formal university courses]<sup>*</sup>
 
 ## .blue-text[Workshops at national conferences]
 
@@ -455,6 +470,9 @@ class: inverse, center, middle
 
 ## .purple-text[One-on-one mentoring]
 
+.footnoteSm.gray-text[
+<sup>\*</sup>This quarter at UW: _Applied Time Series Analysis_ (FISH 507)
+]
 
 ---
 
@@ -488,7 +506,7 @@ class: black-back
 
 class: inverse, center, middle
 
-# SOME EXAMPLES
+# AN EXAMPLE
 
 ---
 
