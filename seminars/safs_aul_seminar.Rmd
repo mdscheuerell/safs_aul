@@ -92,6 +92,76 @@ class: frimgB, center
 
 ---
 
+class: middle, inverse
+# How do natural & human forces affect
+
+# .center[ the structure of aquatic ecosystems & ]
+
+# .right[ the services we derive from them? ]
+
+---
+
+# The forces may be
+
+.green-text[
+## biological (food web interactions, harvest)
+]
+
+--
+
+.blue-text[
+## physical (climate, habitat modification)
+]
+
+--
+
+.orange-text[
+## chemical (ocean acidification, contaminants)
+]
+
+---
+
+# The services can be
+
+.green-text[
+## provisioning (food production)
+]
+
+--
+
+.blue-text[
+## supporting (nutrient cycling)
+]
+
+--
+
+.orange-text[
+## regulating (flood control)
+]
+
+--
+
+.purple-text[
+## cultural (spiritual benefits)
+]
+
+---
+
+class: middle
+
+> # We love to forecast, but we're not very good at it.
+
+.right[
+## - Nate Silver .wh-text["-----"]
+]
+---
+
+class: inverse, middle, center
+
+# The signal and the noise
+
+---
+
 class: center, middle, inverse
 
 # Many scientific advances
@@ -139,61 +209,6 @@ background-size: 90%
 .orange-text.right[
 ## Ecological portfolios
 ]
-
----
-
-class: middle, inverse
-# How do natural & human forces affect
-
-# .center[ the structure of aquatic ecosystems & ]
-
-# .right[ the services we derive from them? ]
-
----
-
-# The forces may be
-
-## .green-text[
-biological (food web interactions, harvest)
-]
-## .blue-text[
-physical (climate, habitat modification)
-]
-## .orange-text[
-chemical (ocean acidification, contaminants)
-]
-
----
-
-# The services can be
-
-## .green-text[
-provisioning (food production)
-]
-## .blue-text[
-supporting (nutrient cycling)
-]
-## .orange-text[
-regulating (flood control)
-]
-## .purple-text[
-cultural (spiritual benefits)
-]
-
----
-
-class: middle
-
-> # We love to forecast, but we're not very good at it.
-
-.right[
-## - Nate Silver .wh-text["-----"]
-]
----
-
-class: inverse, middle, center
-
-# The signal and the noise
 
 ---
 
@@ -860,23 +875,6 @@ background-size: 75%
 
 ---
 
-# How do spatial patterns change over time?
-
-.right.blue-text[
-## Ex: Bering Sea groundfishes (10 spp, 30+ years)
-]
-
----
-
-class: frimg
-background-image: url(figs/sdfa.png)
-background-position: 50% 25%
-background-size: 65%
-
-.citationT.gray-text[Thorson et al. (2016) *Global* *Ecol* & *Biogeogr* 6:627–637]
-
----
-
 class: inverse, middle, center
 
 # Shifting southward
@@ -1149,6 +1147,7 @@ background-size: 85%
 ## Common year effects overshadow .orange-text[intervention]
 
 .citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol* &nbsp; 5:2115–2125]
+
 
 ---
 
