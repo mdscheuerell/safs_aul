@@ -771,17 +771,6 @@ background-size: 80%
 
 ---
 
-class: frimg, center
-background-image: url(figs/dfa_npgo.png)
-background-position: 35% 60%
-background-size: 70%
-
-# Ocean is part of the story
-
-.citationT.gray-text[Ohlberger et al. (2016) *Ecosphere* 7:e01333]
-
----
-
 class: frimg
 background-image: url(figs/dfa_region.png)
 background-position: 50% 35%
@@ -791,12 +780,16 @@ background-size: 65%
 
 ---
 
-class: frimg
-background-image: url(figs/dfa_covar.png)
-background-position: 50% 40%
-background-size: 65%
+# Dynamic Factor Analysis
 
-.citationT.gray-text[Ohlberger et al. (2016) *Ecosphere* 7:e01333]
+## .blue-text.under[State model]
+
+## .blue-text[Trends]<sub><i>t</i></sub> = .blue-text[Trends]<sub><i>t</i>-1</sub> + .gray-text[error]<sub><i>t</i></sub>
+
+## .purple-text.under[Observation model]
+
+## .purple-text[Data]<sub><i>t</i></sub> = .orange-text[Loadings] × .blue-text[Trends]<sub><i>t</i></sub> + .under[Predictors]<sub><i>t</i></sub> + .red-text[error]<sub><i>t</i></sub>
+
 
 ---
 
@@ -813,7 +806,7 @@ background-size: 50%
 
 class: inverse, middle, center
 
-# Space. The final frontier...
+# Space for time substitution
 
 ---
 
