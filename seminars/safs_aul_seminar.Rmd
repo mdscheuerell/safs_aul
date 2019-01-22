@@ -262,7 +262,7 @@ class: center, middle, inverse
 ---
 
 class: frimg, center
-background-image: url(figs/horrified.jpg)
+background-image: url(figs/alone.jpg)
 background-size: cover
 
 ---
@@ -515,9 +515,20 @@ background-size: 70%
 
 ---
 
+class: frimg
+background-image: url(figs/robin.jpg)
+background-position: 50% 80%
+background-size: 40%
+
 # Advantages of hierarchical models
 
-## 4. Rather flexible
+## 4. Data-poor benefit from data-rich
+
+---
+
+# Advantages of hierarchical models
+
+## 5. Rather flexible
 
 .center.blue-text[
 ### This simple model can be used for 5+ unique applications
@@ -857,23 +868,6 @@ background-size: 75%
 
 ---
 
-class: center, bottom, black-back
-background-image: url(figs/robin.jpg)
-background-position: 50% 50%
-background-size: 75%
-
-.white-text[
-# Robin Hood Effect
-]
-
----
-
-class: inverse, middle, center
-
-# Shifting southward
-
----
-
 # Conservation of Pacific salmon
 
 .blue-text[
@@ -1121,7 +1115,7 @@ background-size: 85%
 
 class: inverse, center, middle
 
-# What about unplanned experiments?
+# What about .under[unplanned] experiments?
 
 
 ---
