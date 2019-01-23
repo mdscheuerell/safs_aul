@@ -11,7 +11,6 @@ output:
 
 ```{r setup, include=FALSE, message=FALSE}
 options(htmltools.dir.version = FALSE, servr.daemon = TRUE)
-library(huxtable)
 ```
 
 class: center, middle, inverse
@@ -19,8 +18,6 @@ class: center, middle, inverse
 # IMPROVED UNDERSTANDING OF FISHERIES & ECOSYSTEMS FROM NOISY & DISPARATE DATA
 ## Mark Scheuerell
 _Northwest Fisheries Science Center<br>National Marine Fisheries Service<br>_
-<br>
-_School of Aquatic and Fishery Sciences<br>University of Washington<br>_
 
 .futnote[`r icon::fa("envelope")` mark.scheuerell@noaa.gov]
 
@@ -159,42 +156,6 @@ class: middle
 class: inverse, middle, center
 
 # The signal and the noise
-
----
-
-class: center, middle, inverse
-
-# Many scientific advances
-
----
-
-class: frimg
-
-background-image: url(figs/remote_sensing.jpg)
-background-position: 50% 50%
-background-size: 100%
-
-# Remote sensing
-
----
-
-class: frimg, center
-
-background-image: url(figs/dna.png)
-background-position: 50% 50%
-background-size: 100%
-
-# Genetics
-
----
-
-class: frimg, right
-
-background-image: url(figs/stats.png)
-background-position: 50% 30%
-background-size: 90%
-
-# Analysis
 
 ---
 
@@ -563,39 +524,46 @@ background-size: cover
 
 ---
 
-.center[
-# Emergence of high-dimension data
-]
+class: center, middle, inverse
 
-.green-text[
-## Remote sensing
-]
-.blue-text.center[
-## Citizen science
-]
-.orange-text.right[
-## Large-scale surveys
-]
+# Emergence of high-dimension data
 
 ---
 
-.center[
-# Emergence of high-dimension data
-]
+class: frimg, black-back
 
-.green-text[
-## Remote sensing
-]
-.blue-text.center[
-## Citizen science
-]
-.orange-text.right[
-## Large-scale surveys
-]
+background-image: url(figs/remote_sensing.jpg)
+background-position: 50% 50%
+background-size: 100%
 
-.center[
+# .white-text[Remote sensing]
+
+---
+
+class: frimg, center
+
+background-image: url(figs/dna.png)
+background-position: 50% 50%
+background-size: 100%
+
+# Genetics
+
+---
+
+class: frimg, right
+
+background-image: url(figs/bird_count.jpg)
+background-position: 65% 50%
+background-size: 80%
+
+# Citizen Science
+
+---
+
+class: center, middle, inverse
+
 # How can we make sense of all of this?
-]
+
 
 ---
 
