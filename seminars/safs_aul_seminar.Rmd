@@ -15,7 +15,7 @@ options(htmltools.dir.version = FALSE, servr.daemon = TRUE)
 
 class: center, middle, inverse
 
-# IMPROVED UNDERSTANDING OF FISHERIES & ECOSYSTEMS FROM NOISY & DISPARATE DATA
+# QUANTITATIVE APPROACHES FOR IMPROVED MANAGEMENT AND CONSERVATION OF AQUATIC RESOURCES
 ## Mark Scheuerell
 _Northwest Fisheries Science Center<br>National Marine Fisheries Service<br>_
 
