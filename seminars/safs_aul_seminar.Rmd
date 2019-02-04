@@ -683,21 +683,12 @@ for(i in 1:3) {
 
 ## .blue-text.under[State model]
 
-## .blue-text[Trends]<sub><i>t</i></sub> = .blue-text[Trends]<sub><i>t</i>-1</sub> + .gray-text[errors]<sub><i>t</i></sub>
-
----
-
-# Dynamic Factor Analysis
-
-## .blue-text.under[State model]
-
-## .blue-text[Trends]<sub><i>t</i></sub> = .blue-text[Trends]<sub><i>t</i>-1</sub> + .gray-text[errors]<sub><i>t</i></sub>
+## .blue-text[Trends]<sub><i>t</i></sub> = .blue-text[Trends]<sub><i>t</i>-1</sub> + .gray-text[errors]<sub><i>t</i></sub> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (A few)
 
 ## .purple-text.under[Observation model]
 
-## .purple-text[Data]<sub><i>t</i></sub> = .orange-text[Loadings] × .blue-text[Trends]<sub><i>t</i></sub> + .red-text[errors]<sub><i>t</i></sub>
+## .purple-text[Data]<sub><i>t</i></sub> = .orange-text[Loadings] × .blue-text[Trends]<sub><i>t</i></sub> + .red-text[errors]<sub><i>t</i></sub> &nbsp; &nbsp; &nbsp; (Many)
 
-.citationT.gray-text[Zuur et al. (2003) *Environmetrics* 14:665–685] 
 
 ---
 
@@ -708,131 +699,30 @@ for(i in 1:3) {
 ]
 
 .gray-text.right[
-### Mantua et al. (1997)
+### Stachura et al. (2014) _CJFAS_
 
-### Mueter et al. (2005)
+### Goertler et al. (2016) _PLoS One_
 
-### Stachura et al. (2014)
+### Ohlberger et al. (2016) _Ecosphere_
+
+### Jorgensen et al. (2016) _Ecology & Evolution_
 ]
 
 ---
 
-class: black-back 
-background-image: url(figs/aykssi.png)
-background-position: 50% 50%
-background-size: 63%
-
----
-
-# Are there common patterns over time?
-
-.blue-text.right[
-## Ex: Alaskan Chinook salmon (15 popns, 25+ years)
-]
-
----
-
-class: frimg
-background-image: url(figs/dfa_1.png)
-background-position: 50% 40%
-background-size: 75%
-
----
-
-class: frimg
-background-image: url(figs/dfa_2.png)
-background-position: 50% 70%
-background-size: 80%
-
-# Two declining trends
-
-.citationT.gray-text[Ohlberger et al. (2016) *Ecosphere* 7:e01333]
-
----
-
-class: frimg
-background-image: url(figs/dfa_region.png)
-background-position: 50% 35%
-background-size: 65%
-
-.citationT.gray-text[Ohlberger et al. (2016) *Ecosphere* 7:e01333]
-
----
-
-# Dynamic Factor Analysis
-
-## .blue-text.under[State model]
-
-## .blue-text[Trends]<sub><i>t</i></sub> = .blue-text[Trends]<sub><i>t</i>-1</sub> + .gray-text[errors]<sub><i>t</i></sub>
-
-## .purple-text.under[Observation model]
-
-## .purple-text[Data]<sub><i>t</i></sub> = .orange-text[Loadings] × .blue-text[Trends]<sub><i>t</i></sub> + .under[Predictors]<sub><i>t</i></sub> + .red-text[errors]<sub><i>t</i></sub>
-
-
----
-
-class: frimg, center
-background-image: url(figs/dfa_fore_err.png)
-background-position: 45% 60%
-background-size: 50%
-
-# Environmental effects improve forecasts
-
-.citationT.gray-text[Ohlberger et al. (2016) *Ecosphere* 7:e01333]
-
----
-
-class: inverse, middle, center
-
-# Space for time substitution
-
----
-
-class: black-back
-background-image: url(figs/wcgfs.jpg)
-background-position: 50% 50%
-background-size: 97%
-
----
-
-# Are there common patterns over space?
+# Abundance & catches of groundfish
 
 .right.blue-text[
-## Ex: California Current rockfish (20 spp, 10 years)
+## How do common spatial patterns change over time?
 ]
 
----
+.gray-text.right[
+### Thorson et al. (2015) *Meth* *Ecol* & *Evol*
 
-# Spatial Factor Analysis
+### Thorson et al. (2016) *Global Ecol Biogeogr* & *Evol*
 
-## .blue-text.under[State model]
-
-## .blue-text[Spatial maps]<sub><i>i</i></sub>
-
-## .purple-text.under[Observation model]
-
-## .purple-text[Data]<sub><i>i</i></sub> = .orange-text[Loadings] × .blue-text[Spatial maps]<sub><i>i</i></sub> + .red-text[errors]<sub><i>i</i></sub>
-
-.citationT.gray-text[Thorson et al. (2015) *Meth* *Ecol* & *Evol* 6:627–637]
-
----
-
-class: frimg
-background-image: url(figs/sfa_1.png)
-background-position: 50% 30%
-background-size: 65%
-
-.citationT.gray-text[Thorson et al. (2015) *Meth* *Ecol* & *Evol* 6:627–637]
-
----
-
-class: frimg
-background-image: url(figs/sfa_2.png)
-background-position: 50% 30%
-background-size: 75%
-
-.citationT.gray-text[Thorson et al. (2015) *Meth* *Ecol* & *Evol* 6:627–637]
+### Thorson et al. (2018) *Proc Royal Soc B*
+]
 
 ---
 
@@ -844,12 +734,19 @@ class: inverse, center, middle
 
 class: middle
 
-.red-text[
-## More than one-half of stocks in the lower 48
+.blue-text.under[
+# Evolutionarily Significant Unit (ESU)
 ]
-.red-text.right[
-## are listed under the Endangered Species Act
-]
+
+## A group of animals considered distinct for the purpose of conservation 
+
+---
+
+class: middle, center
+
+
+# .red-text[More than 50%] of ESUs are listed under the Endangered Species Act
+
 
 ---
 
