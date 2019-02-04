@@ -946,6 +946,34 @@ text(tstar,par()$usr[3]-aB, "T",
 ---
 
 class: frimg
+background-image: url(figs/suppl_esu.png)
+background-size: 95%
+
+---
+
+class: middle, center
+
+***
+
+# Evolutionarily Significant Unit
+
+***
+
+.gray-text[
+# $\Large \Downarrow$
+]
+
+***
+
+.blue-text[
+# Popn<sub>1</sub> $\cdot$ Popn<sub>2</sub> $\cdot$ Popn<sub>3</sub> $\cdots$ Popn<sub>_n_</sub>
+]
+
+***
+
+---
+
+class: frimg
 background-image: url(figs/suppl_eff.png)
 background-position: 50% 37%
 background-size: 130%
@@ -1015,12 +1043,14 @@ background-size: 100%
 
 ---
 
-class: black-back
+class: black-back, middle
 background-image: url(figs/seamap_zones.jpeg)
 background-position: 50% 50%
 background-size: 95%
 
-# Spatial mgmt zones
+<br><br><br><br>
+
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Spatial management zones
 
 ---
 
