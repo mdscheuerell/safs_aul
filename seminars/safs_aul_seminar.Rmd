@@ -1059,6 +1059,51 @@ background-size: 55%
 
 class: inverse, center, middle
 
+# RECOVERY OPTIONS FOR SALMON?
+
+---
+
+class: middle, center
+
+# .orange-text[Life-cycle models] are used extensively to predict effects of recovery actions
+
+---
+
+# Common approach
+
+## .center.blue-text[Pre-process data to fit chosen model framework]
+
+---
+
+class: frimg
+background-image: url(figs/rube.jpg)
+background-position: 50% 75%
+background-size: 70%
+
+# Common approach
+
+## .center.blue-text[Pre-process data to fit chosen model framework]
+
+---
+
+# .gray-text[Common approach]
+
+## .center.gray-text[~~Pre-process data to fit chosen model framework~~]
+
+# Better approach
+
+## .center.blue-text[Choose model framework to match data]
+
+---
+
+class: inverse, center, middle
+
+# INTEGRATED POPULATION MODELS
+
+---
+
+class: inverse, center, middle
+
 # Future directions
 
 ---
