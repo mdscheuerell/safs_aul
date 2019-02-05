@@ -1069,36 +1069,85 @@ class: middle, center
 
 ---
 
-# Common approach
-
-## .center.blue-text[Pre-process data to fit chosen model framework]
-
----
-
 class: frimg
-background-image: url(figs/rube.jpg)
-background-position: 50% 75%
-background-size: 70%
+background-image: url(figs/rube2.jpg_large)
+background-position: 50% 85%
+background-size: 55%
 
 # Common approach
 
-## .center.blue-text[Pre-process data to fit chosen model framework]
+## .center.blue-text[Pre-process raw data based upon chosen model]
 
 ---
 
-# .gray-text[Common approach]
+# .gray-text[~~Common~~] Approach
 
-## .center.gray-text[~~Pre-process data to fit chosen model framework~~]
+## .center.gray-text[~~Pre-process raw data based upon chosen model~~]
 
-# Better approach
+## .center.blue-text[Choose model based upon raw data]
 
-## .center.blue-text[Choose model framework to match data]
+### .citation[Maunder & Punt (2013) _Fish Res_]
+
+---
+
+# .gray-text[~~Common~~] Approach
+
+## .right.gray-text[~~Pre-process raw data based upon chosen model~~]
+
+## .right.blue-text[Choose model based upon raw data]
+
+### .right.citation[Maunder & Punt (2013) _Fish Res_]
 
 ---
 
 class: inverse, center, middle
 
 # INTEGRATED POPULATION MODELS
+
+---
+
+class: frimg
+background-image: url(figs/skagit.png)
+background-position: 50% 50%
+background-size: cover
+
+# Skagit River
+
+---
+
+# Characterize uncertainty between steelhead
+
+## .blue-text[1) spawners and offspring]
+
+## .green-text[2) productivity and environmental conditions]
+
+---
+
+# Integrated population model
+
+## .blue-text.under[State model]
+
+## .blue-text[Offspring] = f(.blue-text[Spawners], .orange-text[Hatchery fish], .green-text[Streamflows])
+
+---
+
+# Integrated population model
+
+## .blue-text.under[State model]
+
+## .blue-text[Offspring] = f(.blue-text[Spawners], .orange-text[Hatchery fish], .green-text[Streamflows])
+
+## .purple-text.under[Observation models]
+
+## .purple-text[Spawners] = g(.blue-text[Spawners], .gray-text[Harvest])
+
+## .purple-text[Ages] = h(.blue-text[Offspring])
+
+
+
+
+
+
 
 ---
 
@@ -1187,7 +1236,8 @@ Carnival: *Frank Kovalchek (2010)*
 Snake oil: *The Register*  
 Shakespeare's plays: *Sir John Gilbert (1849)*  
 Budweiser: *Anheiser-Busch*  
-DWH: *US Coast Guard*  
+DWH: *US Coast Guard* 
+Rube Goldberg: *Rube Goldberg*
 ]
 
 ---
