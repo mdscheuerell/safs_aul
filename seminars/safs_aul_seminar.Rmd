@@ -1134,16 +1134,6 @@ background-size: cover
 
 ## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
 
-## .center[f = Ricker or Beverton-Holt &nbsp; &nbsp; &nbsp; &nbsp;]
-
----
-
-# Integrated population model
-
-## .blue-text.under[State model]
-
-## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
-
 ## .purple-text.under[Observation models]
 
 ## .purple-text[Spawners] = g(.blue-text[Spawners], .gray-text[Harvest])
@@ -1154,10 +1144,12 @@ background-size: cover
 
 class: frimg, center
 background-image: url(figs/flow_effects.png)
-background-position: 50% 70%
+background-position: 50% 75%
 background-size: 85%
 
-# Flow effects
+# Flow effects on productivity
+
+.citationT.gray-text[Scheuerell et al. (*in revision*)]
 
 ---
 
@@ -1166,7 +1158,9 @@ background-image: url(figs/H_effects.png)
 background-position: 50% 45%
 background-size: 85%
 
-# Hatchery effects
+# Hatchery effect on productivity
+
+.citationT.gray-text[Scheuerell et al. (*in revision*)]
 
 ---
 
@@ -1175,7 +1169,7 @@ background-image: url(figs/BH_form.png)
 background-position: 50% 70%
 background-size: 80%
 
-# Ideal parent-offspring relationship
+# Theoretical parent-offspring relationship
 
 ---
 
@@ -1185,6 +1179,30 @@ background-position: 50% 65%
 background-size: 85%
 
 # Real parent-offspring relationship
+
+.citationT.gray-text[Scheuerell et al. (*in revision*)]
+
+---
+
+class: frimg, center
+background-image: url(figs/ref_points0.png)
+background-position: 50% 55%
+background-size: 75%
+
+# Optimal escapement for targeting MSY
+
+.citationT.gray-text[Scheuerell et al. (*in revision*)]
+
+---
+
+class: frimg, center
+background-image: url(figs/ref_points.png)
+background-position: 50% 55%
+background-size: 75%
+
+# Co-management is conservation minded
+
+.citationT.gray-text[Scheuerell et al. (*in revision*)]
 
 
 
