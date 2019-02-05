@@ -852,9 +852,9 @@ background-size: contain
 
 ---
 
-# The company began advertising at .orange-text[Time = 9]
+# How much did .orange-text[advertising] increase sales?
 
-```{r sale_ts_2, echo=FALSE, dpi=300, fig.height=4.5, fig.width=8, out.height="100%", out.width="100%", fig.align='center'}
+```{r sale_ts_3, echo=FALSE, dpi=300, fig.height=4.5, fig.width=8, out.height="100%", out.width="100%", fig.align='center'}
 tstar <- 9
 tt <- 20
 
@@ -865,28 +865,6 @@ x1 <- cumsum(rnorm(tt)) + 5
 dd <- c(rep(0,tstar), rep(1.5,20-tstar))
 x2 <- x1 + dd
 
-par(mai=c(0.9,0.9,0.1,0.1), omi=c(0,0,0,0))
-
-plot(seq(tt), x1, type="n", pch=16, las=1, 
-        xlab="", ylab="", cex.axis=1.5)
-mtext(side=1, "Time", line=3.5, cex=1.8)
-mtext(side=2, "Sales index", line=3, cex=1.8)
-
-lines(seq(tt), x2, type="o", pch=16, cex=1.2, las=1, col="dodgerblue", lwd=2)
-
-scl <- 0.07
-aB <- (par()$usr[4] - par()$usr[3])*scl
-arrows(x0=tstar,y0=par()$usr[3]-aB,y1=par()$usr[3]*0.99,
-       length=0.1, col="darkorange", xpd=TRUE, lwd=2)
-text(tstar,par()$usr[3]-aB, "T",
-	 cex=2, col="darkorange", pos=1, xpd=TRUE)
-```
-
----
-
-# How much did .orange-text[advertising] increase sales?
-
-```{r sale_ts_3, echo=FALSE, dpi=300, fig.height=4.5, fig.width=8, out.height="100%", out.width="100%", fig.align='center'}
 par(mai=c(0.9,0.9,0.1,0.1), omi=c(0,0,0,0))
 
 plot(seq(tt), x1, type="n", pch=16, las=1, 
@@ -933,15 +911,15 @@ text(tstar,par()$usr[3]-aB, "T",
 
 ---
 
-# Our model for supplementation
+# A model for supplementation
 
 ## .blue-text.under[State model]
 
-## .blue-text[Density]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i>-1</sub> + .orange-text[Supplementation]<sub><i>t</i></sub> + .gray-text[errors]<sub><i>t</i></sub>
+## .blue-text[Density]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i>-1</sub> + .orange-text[Supplementation]<sub><i>t</i></sub> + .gray-text[error]<sub><i>t</i></sub>
 
 ## .purple-text.under[Observation model]
 
-## .purple-text[Data]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i></sub> + .red-text[errors]<sub><i>t</i></sub>
+## .purple-text[Data]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i></sub> + .red-text[error]<sub><i>t</i></sub>
 
 ---
 
@@ -951,25 +929,17 @@ background-size: 95%
 
 ---
 
-class: middle, center
+# Two modifications to the model
 
-***
+## 1) .orange-text[Supplementation] effect is hierarchical across popns
 
-# Evolutionarily Significant Unit
+---
 
-***
+# Two modifications to the model
 
-.gray-text[
-# $\Large \Downarrow$
-]
+## 1) .orange-text[Supplementation] effect is hierarchical across popns
 
-***
-
-.blue-text[
-# Popn<sub>1</sub> $\cdot$ Popn<sub>2</sub> $\cdot$ Popn<sub>3</sub> $\cdots$ Popn<sub>_n_</sub>
-]
-
-***
+## 2) .red-text[Errors] include a common year effect
 
 ---
 
