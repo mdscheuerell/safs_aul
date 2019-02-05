@@ -954,7 +954,7 @@ background-size: 130%
 ### Mean increase of only 3.3% over ~25 years
 ]
 
-.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol* &nbsp; 5:2115–2125]
+.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol*]
 
 ---
 
@@ -969,7 +969,7 @@ background-size: 130%
 ### Probability of positive effect is ~70%
 ]
 
-.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol* &nbsp; 5:2115–2125]
+.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol*]
 
 ---
 
@@ -980,7 +980,7 @@ background-size: 85%
 
 ## Common year effects overshadow .orange-text[intervention]
 
-.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol* &nbsp; 5:2115–2125]
+.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol*]
 
 
 ---
@@ -1069,24 +1069,9 @@ class: middle, center
 
 ---
 
-class: frimg
-background-image: url(figs/rube2.jpg_large)
-background-position: 50% 85%
-background-size: 55%
-
 # Common approach
 
-## .center.blue-text[Pre-process raw data based upon chosen model]
-
----
-
-# .gray-text[~~Common~~] Approach
-
-## .center.gray-text[~~Pre-process raw data based upon chosen model~~]
-
-## .center.blue-text[Choose model based upon raw data]
-
-### .citation[Maunder & Punt (2013) _Fish Res_]
+## .right.blue-text[Pre-process raw data based upon chosen model]
 
 ---
 
@@ -1096,7 +1081,7 @@ background-size: 55%
 
 ## .right.blue-text[Choose model based upon raw data]
 
-### .right.citation[Maunder & Punt (2013) _Fish Res_]
+### .right[Maunder & Punt (2013) _Fish Res_]
 
 ---
 
@@ -1106,7 +1091,7 @@ class: inverse, center, middle
 
 ---
 
-class: frimg
+class: black-back
 background-image: url(figs/skagit.png)
 background-position: 50% 50%
 background-size: cover
@@ -1123,11 +1108,15 @@ background-size: cover
 
 ---
 
-# Integrated population model
+# Skagit River steelhead
 
-## .blue-text.under[State model]
+.right.blue-text[
+## Escapement, harvest & age data from 1978-2018
+]
 
-## .blue-text[Offspring] = f(.blue-text[Spawners], .orange-text[Hatchery fish], .green-text[Streamflows])
+.right.green-text[
+## Effects of streamflows & hatchery releases
+]
 
 ---
 
@@ -1135,7 +1124,25 @@ background-size: cover
 
 ## .blue-text.under[State model]
 
-## .blue-text[Offspring] = f(.blue-text[Spawners], .orange-text[Hatchery fish], .green-text[Streamflows])
+## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
+
+---
+
+# Integrated population model
+
+## .blue-text.under[State model]
+
+## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
+
+## .center[f = Ricker or Beverton-Holt &nbsp; &nbsp; &nbsp; &nbsp;]
+
+---
+
+# Integrated population model
+
+## .blue-text.under[State model]
+
+## .blue-text[Offspring] = f(.blue-text[Spawners], .green-text[Streamflows], .orange-text[Hatchery fish])
 
 ## .purple-text.under[Observation models]
 
@@ -1143,8 +1150,41 @@ background-size: cover
 
 ## .purple-text[Ages] = h(.blue-text[Offspring])
 
+---
 
+class: frimg, center
+background-image: url(figs/flow_effects.png)
+background-position: 50% 70%
+background-size: 85%
 
+# Flow effects
+
+---
+
+class: frimg, center
+background-image: url(figs/H_effects.png)
+background-position: 50% 45%
+background-size: 85%
+
+# Hatchery effects
+
+---
+
+class: frimg, center
+background-image: url(figs/BH_form.png)
+background-position: 50% 70%
+background-size: 80%
+
+# Ideal parent-offspring relationship
+
+---
+
+class: frimg, center
+background-image: url(figs/SR_relationship.png)
+background-position: 50% 65%
+background-size: 85%
+
+# Real parent-offspring relationship
 
 
 
@@ -1237,9 +1277,23 @@ Snake oil: *The Register*
 Shakespeare's plays: *Sir John Gilbert (1849)*  
 Budweiser: *Anheiser-Busch*  
 DWH: *US Coast Guard* 
-Rube Goldberg: *Rube Goldberg*
 ]
 
 ---
 
 class: black-back
+
+---
+
+class: middle, center, inverse
+
+# EXTRAS
+
+---
+
+class: frimg
+background-image: url(figs/rube2.jpg_large)
+background-position: 50% 50%
+background-size: 75%
+
+Rube Goldberg: *Rube Goldberg*
