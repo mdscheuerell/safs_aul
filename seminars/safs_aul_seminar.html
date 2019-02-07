@@ -1,27 +1,26 @@
----
-output:
-  xaringan::moon_reader:
-    chakra: libs/remark-latest.min.js
-    css: "my-theme.css"
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
 
-```{r setup, include=FALSE, message=FALSE}
-options(htmltools.dir.version = FALSE, servr.daemon = TRUE)
-```
+
+
 
 class: center, middle, inverse
 
 # QUANTITATIVE APPROACHES FOR IMPROVED MANAGEMENT AND CONSERVATION OF AQUATIC RESOURCES
 ## Mark Scheuerell
-_Northwest Fisheries Science Center<br>National Marine Fisheries Service<br>_
+_Northwest Fisheries Science Center&lt;br&gt;National Marine Fisheries Service&lt;br&gt;_
 
-.futnote[`r icon::fa("envelope")` mark.scheuerell@noaa.gov]
+.futnote[<i class="fa  fa-envelope "></i> mark.scheuerell@noaa.gov]
 
-.citation[`r icon::fa("twitter")` @mark_scheuerell]
+.citation[<i class="fa  fa-twitter "></i> @mark_scheuerell]
 
 ---
 
@@ -69,7 +68,7 @@ class: frimgB, center
 
 # I was trained as a field ecologist
 
-<img src="figs/Mark_at_Rainbow_Cr.jpg", alt="", height=440, width=440>
+&lt;img src="figs/Mark_at_Rainbow_Cr.jpg", alt="", height=440, width=440&gt;
 
 ---
 
@@ -88,9 +87,9 @@ class: frimgB, center
 ---
 
 class: middle, inverse
-# How do natural & human forces affect
+# How do natural &amp; human forces affect
 
-# .center[ the structure of aquatic ecosystems & ]
+# .center[ the structure of aquatic ecosystems &amp; ]
 
 # .right[ the services we derive from them? ]
 
@@ -144,7 +143,7 @@ class: middle, inverse
 
 class: middle
 
-> # We love to forecast, but we're not very good at it.
+&gt; # We love to forecast, but we're not very good at it.
 
 .right[
 ## - Nate Silver .wh-text["-----"]
@@ -175,42 +174,7 @@ class: center
 
 # *Methods in Ecology and Evolution*
 
-```{r timeseries, dpi=300, fig.height=4, fig.width=6, out.height="80%", out.width="80%", fig.align='center', echo=FALSE}
-mee <- data.frame(yr=seq(2010,2017),
-                  issues=c(4,6,6,12,12,12,12,12),
-                  imp=c(NA,5.1,6,6.6,7.4,8.1,8.6,9.9))
-
-pd <- as.matrix(mee[,-1])
-
-par(mfrow=c(2,1), mai=c(0.3,0.4,0.3,0), omi=c(0.1,0,0,0))
-## top panel
-bp <- barplot(height=rep(NA,8), las=1, ylim=c(0,13),
-              col="#488fdf", border=NA, space=1,
-              ylab="",
-              cex.lab=1.4, yaxt="n")
-abline(h=seq(0,12,3), col="gray")
-text(0, 1.15*par()$usr[4], cex=1.4,
-     "Issues per year", xpd=NA, pos=4)
-barplot(height=mee$issues, las=1, add=TRUE,
-        col="#488fdf", border=NA, space=1,
-        ylab="Issues per year",
-        cex.lab=1.4, yaxt="n")
-axis(2, at=seq(0,12,3), las=1, tick=FALSE, cex.axis=1.2)
-## bottom panel
-barplot(height=rep(NA,8), las=1,
-        col="darkblue", border=NA, space=1,
-        ylim=c(0,11),
-        ylab="", cex.lab=1.4, yaxt="n")
-abline(h=seq(0,10,2), col="gray")
-text(0, 1.15*par()$usr[4], cex=1.4,
-     "Impact factor", xpd=NA, pos=4)
-barplot(height=mee$imp, las=1, names.arg=mee$yr, add=TRUE,
-        col="#ff8100", space=1, border=NA,
-        cex.names=1.2,
-        ylab="", cex.lab=1.4, yaxt="n")
-axis(2, at=seq(0,10,2), las=1, tick=FALSE, cex.axis=1.2)
-text(bp[1],1,"NA",col="darkgray", adj=c(0.5,0.5))
-```
+&lt;img src="safs_aul_seminar_files/figure-html/timeseries-1.png" width="80%" height="80%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -268,35 +232,7 @@ class: center, middle, inverse
 
 ## Describes the .blue-text[true state of nature] over time or space
 
-```{r state_diag, dpi=300, fig.height=4, fig.width=8, out.height="100%", out.width="100%", fig.align='center', echo=FALSE, warning=FALSE}
-par(mai=c(0.8,0.8,0,0), omi=rep(0,4))
-## boundaries
-ss <- 5
-nn <- 7
-rr <- ss*3
-cc <- ss*nn
-## mid-points
-xm <- ss/2 + seq(0,cc-ss,ss)
-ymt <- rr - ss/2
-ymb <- ss/2
-## arrow locs
-x0t <- seq(ss, by=2*ss, len=3)
-x1t <- x0t + ss
-## empty plot space
-plot(c(0,cc), c(0,rr), type="n", xlab="", ylab="",
-     xaxt="n", yaxt="n", bty="n")
-## top row: state
-symbols(x=xm[c(1,3,5,7)], y=rep(ymt,4), circles=rep(ss/2,4),
-        lty="solid",  fg=NA, bg="#488fdf",
-        inches=FALSE, add=TRUE, lwd=3)
-text("Truth", x=-ss, y=ymt, adj=c(0,0.5), xpd=NA,
-     cex=2, col="#488fdf")
-arrows(x0=x0t,x1=x1t,y0=ymt, col="#488fdf", lwd=3, length=0.12)
-## Time or space
-arrows(x0=ss/2, x1=cc-ss/2, y0=-ss/3+ss*2,
-       length=0.12, lwd=3, xpd=NA)
-text("Time or space", x=cc/2, y=-ss/2+ss*2, xpd=NA, pos=1, cex=2)
-```
+&lt;img src="safs_aul_seminar_files/figure-html/state_diag-1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -356,46 +292,15 @@ background-size: cover
 
 # Part 2: Observation model
 
-## .purple-text[Data] = .blue-text[Truth] &#177; .red-text[Errors]
+## .purple-text[Data] = .blue-text[Truth] &amp;#177; .red-text[Errors]
 
 ---
 
 # Part 2: Observation model
 
-## .purple-text[Data] = .blue-text[Truth] &#177; .red-text[Errors]
+## .purple-text[Data] = .blue-text[Truth] &amp;#177; .red-text[Errors]
 
-```{r obs_diag, dpi=300, fig.height=4, fig.width=8, out.height="100%", out.width="100%", fig.align='center', echo=FALSE, warning=FALSE}
-par(mai=c(0.8,0.8,0,0), omi=rep(0,4))
-## arrow locs
-x0t <- seq(ss, by=2*ss, len=3)
-x1t <- x0t + ss
-y0b <- rr - ss
-y1b <- ss
-## empty plot space
-plot(c(0,cc), c(0,rr), type="n", xlab="", ylab="",
-     xaxt="n", yaxt="n", bty="n")
-## top row: state
-symbols(x=xm[c(1,3,5,7)], y=rep(ymt,4), circles=rep(ss/2,4),
-        lty="solid",  fg=NA, bg="#488fdf",
-        inches=FALSE, add=TRUE, lwd=3)
-text("Truth", x=-ss, y=ymt, adj=c(0,0.5), xpd=NA,
-     cex=2, col="#488fdf")
-## arrows
-arrows(x0=x0t,x1=x1t,y0=ymt, col="#488fdf", lwd=3, length=0.12)
-## bottom row: obs
-symbols(x=xm[c(1,3,5,7)], y=rep(ss/2,4), circles=rep(ss/2,4),
-        lty="solid",  fg=NA, bg="#844870",
-        inches=FALSE, add=TRUE, lwd=3)
-text("Data", x=-ss, y=ss/2, adj=c(0,0.5), xpd=NA,
-     cex=2, col="#844870")
-## arrows
-arrows(x0=xm[c(1,3,5,7)], y0=y0b, y1=y1b,
-       col="#c10101", lwd=3, length=0.12)
-## Time or space
-arrows(x0=ss/2, x1=cc-ss/2, y0=-ss/3,
-       length=0.12, lwd=3, xpd=NA)
-text("Time or space", x=cc/2, y=-ss/2, xpd=NA, pos=1, cex=2)
-```
+&lt;img src="safs_aul_seminar_files/figure-html/obs_diag-1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -412,9 +317,9 @@ class: inverse, center, middle
 .center.purple-text[
 ### Changes in observers or sensors
 
-### Varying survey locations & effort
+### Varying survey locations &amp; effort
 
-### Direct & remote sampling  
+### Direct &amp; remote sampling  
 ]
 
 ---
@@ -423,43 +328,7 @@ class: inverse, center, middle
 
 ## 2. .gray-text[Missing data] are easily accommodated
 
-```{r obs_NA, dpi=300, fig.height=4, fig.width=8, out.height="90%", out.width="90%", fig.align='center', echo=FALSE, warning=FALSE}
-par(mai=c(0.8,0.8,0,0), omi=rep(0,4))
-## arrow locs
-x0t <- seq(ss, by=2*ss, len=3)
-x1t <- x0t + ss
-y0b <- rr - ss
-y1b <- ss
-## empty plot space
-plot(c(0,cc), c(0,rr), type="n", xlab="", ylab="",
-     xaxt="n", yaxt="n", bty="n")
-## top row: state
-symbols(x=xm[c(1,3,5,7)], y=rep(ymt,4), circles=rep(ss/2,4),
-        lty="solid",  fg=NA, bg="#488fdf",
-        inches=FALSE, add=TRUE, lwd=3)
-text("Truth", x=-ss, y=ymt, adj=c(0,0.5), xpd=NA,
-     cex=2, col="#488fdf")
-## arrows
-arrows(x0=x0t,x1=x1t,y0=ymt, col="#488fdf", lwd=3, length=0.12)
-## bottom row: obs
-symbols(x=xm[c(1,3,7)], y=rep(ss/2,3), circles=rep(ss/2,3),
-        lty="solid",  fg=NA, bg="#844870",
-        inches=FALSE, add=TRUE, lwd=3)
-text("Data", x=-ss, y=ss/2, adj=c(0,0.5), xpd=NA,
-     cex=2, col="#844870")
-## NA's
-symbols(x=xm[5], y=ss/2, circles=ss/2,
-        lty="solid",  fg=NA, bg="#656565",
-        inches=FALSE, add=TRUE, lwd=3)
-text("NA", x=xm[5], y=ss/2, cex=1.8, col="#ffffff")
-## arrows
-arrows(x0=xm[c(1,3,7)], y0=y0b, y1=y1b,
-       col="#c10101", lwd=3, length=0.12)
-## Time or space
-arrows(x0=ss/2, x1=cc-ss/2, y0=-ss/3,
-       length=0.12, lwd=3, xpd=NA)
-text("Time or space", x=cc/2, y=-ss/2, xpd=NA, pos=1, cex=2)
-```
+&lt;img src="safs_aul_seminar_files/figure-html/obs_NA-1.png" width="90%" height="90%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -470,7 +339,7 @@ background-size: 70%
 
 # Advantages of hierarchical models
 
-## 3. Improved accuracy & precision
+## 3. Improved accuracy &amp; precision
 
 ---
 
@@ -493,8 +362,8 @@ background-size: 40%
 ### This simple model can be used for 5+ unique applications
 ]
 
-$$\LARGE \mathbf{x}_t = \mathbf{B} \mathbf{x}_{t-1} + \mathbf{w}_t \\
-  \LARGE \mathbf{y}_t = \mathbf{Z} \mathbf{x}_t + \mathbf{v}_t$$
+`$$\LARGE \mathbf{x}_t = \mathbf{B} \mathbf{x}_{t-1} + \mathbf{w}_t \\
+  \LARGE \mathbf{y}_t = \mathbf{Z} \mathbf{x}_t + \mathbf{v}_t$$`
 
 ---
 
@@ -506,12 +375,12 @@ class: inverse, center, middle
 
 # Many software options
 
-## .green-text[Canned **R** packages] (dlm, vars, MARSS<sup>*</sup>)
+## .green-text[Canned **R** packages] (dlm, vars, MARSS&lt;sup&gt;*&lt;/sup&gt;)
 
 ## .blue-text[Code-your-own] (JAGS, Stan, greta)
 
 .footnoteSm.gray-text[
-<sup>\*</sup>Holmes, Ward, Scheuerell (2018) _Analysis of multivariate time-series using the MARSS package_
+&lt;sup&gt;\*&lt;/sup&gt;Holmes, Ward, Scheuerell (2018) _Analysis of multivariate time-series using the MARSS package_
 ]
 
 ---
@@ -573,13 +442,13 @@ background-size: 100%
 .white-text[
 # Classification
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ## .right[ History ]
 
 ## .left[ Tragedy ]
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 ## .center[ Comedy ]  
 ]
@@ -590,73 +459,11 @@ class: center
 
 # Ordination
 
-```{r pca_ex, warning=FALSE, message=FALSE, echo=FALSE, dpi=300, fig.height=5, fig.width=10, fig.align='center', out.height="100%", out.width="100%"}
-set.seed(123)
-
-par(mfrow=c(1,2), mai=c(0.7,0.7,0.3,0.3), omi=rep(0,4), lwd=2, fg="black")
-
-## PCA
-biplot(prcomp(rock[,c(1,2,4)]), col=c("black", "darkorange"),
-       yaxt="n", xaxt="n", ylab="", xlab="")
-mtext(side=1, expression(PC[1]), cex=1.5, line=1)
-mtext(side=2, expression(PC[2]), cex=1.5, line=1)
-mtext(side=3, "PCA", cex=2, line=0)
-
-## NMDS
-comm_mat <- matrix(
-   sample(1:100,300,replace=T),nrow=6,
-   dimnames=list(paste("community",1:6,sep="_"),paste0("sp",1:50)))
-
-nmds <- vegan::metaMDS(comm_mat, k=3, trymax=100, trace=0)
-
-vegan::ordiplot(nmds, type="n",
-                yaxt="n", xaxt="n", ylab="", xlab="")
-vegan::orditorp(nmds, display="species", col="dodgerblue", air=0.01)                     
-vegan::orditorp(nmds, display="sites", cex=1.25, col="darkorange", air=0.01)                     
-mtext(side=1, expression(NMDS[1]), cex=1.5, line=1)
-mtext(side=2, expression(NMDS[2]), cex=1.5, line=1)
-mtext(side=3, "NMDS", cex=2, line=0)
-```
+&lt;img src="safs_aul_seminar_files/figure-html/pca_ex-1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 
-```{r plot_many_ts, echo=FALSE, dpi=300, fig.height=5.5, fig.width=7, fig.align='center'}
-NN <- 25
-TT <- 30
-MM <- 3
- 
-set.seed(123)
-## MM x TT matrix of innovations
-ww <- matrix(rnorm(MM*TT, 0, 1), MM, TT)
-ww[,1] <- rnorm(MM, 0, sqrt(5))
-## MM x TT matrix of scaled latent trends
-xx <- t(scale(apply(ww,1,cumsum)))
-
-## loadings matrix
-ZZ <- matrix(runif(NN*MM, -1, 1), NN, MM)
-diag(ZZ) <- rev(sort(abs(diag(ZZ))))
-ZZ[upper.tri(ZZ)] <- 0
-ZZ <- round(ZZ, 2)
-
-## obs var
-obs_var <- 0.2^2
-## obs errors
-ee <- t(MASS::mvrnorm(TT, matrix(0,NN,1), diag(obs_var,NN,NN)))
-## NN x TT matrix of observed data
-yy <- ZZ %*% xx + ee
-
-clr <- viridis::plasma(NN, alpha=0.7, end=0.8)
-
-vv <- sample(seq(NN), NN)
-
-par(mfrow=c(5,5), mai=c(0.1,0.1,0,0), omi=c(0,0,0,0)) 
-
-for(i in 1:NN) {
-	plot.ts(yy[vv[i],], lwd=2,
-	        xlab="", xaxt="n", ylab="", yaxt="n",
-	        col=clr[i], bty="n")
-}
-```
+&lt;img src="safs_aul_seminar_files/figure-html/plot_many_ts-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -664,16 +471,7 @@ class: center
 
 # Just some combination of these
 
-```{r plot_dfa_trends, echo=FALSE, fig.align="center", dpi=300, fig.height=3, fig.width=8}
-## plot the trends
-par(mfrow=c(1,3), mai=c(0.2,0,0,0), omi=rep(0.1,4))
-clr <- viridis::plasma(MM, end=0.8)
-for(i in 1:3) {
-	plot.ts(xx[i,], lwd=3,
-	        xlab="", xaxt="n", ylab="", yaxt="n",
-	        col=clr[i], bty="n")
-}
-```
+&lt;img src="safs_aul_seminar_files/figure-html/plot_dfa_trends-1.png" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -681,19 +479,19 @@ for(i in 1:3) {
 
 ## .blue-text.under[State model]
 
-## .blue-text[Trends]<sub><i>t</i></sub> = .blue-text[Trends]<sub><i>t</i>-1</sub> + .gray-text[errors]<sub><i>t</i></sub> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (A few)
+## .blue-text[Trends]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .blue-text[Trends]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;-1&lt;/sub&gt; + .gray-text[errors]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; (A few)
 
 ## .purple-text.under[Observation model]
 
-## .purple-text[Data]<sub><i>t</i></sub> = .orange-text[Loadings] × .blue-text[Trends]<sub><i>t</i></sub> + .red-text[errors]<sub><i>t</i></sub> &nbsp; &nbsp; &nbsp; (Many)
+## .purple-text[Data]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .orange-text[Loadings] × .blue-text[Trends]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + .red-text[errors]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; (Many)
 
 
 ---
 
-# Salmon returns & productivity
+# Salmon returns &amp; productivity
 
 .blue-text.right[
-## Trying to understand when & where stocks covary
+## Trying to understand when &amp; where stocks covary
 ]
 
 .gray-text.right[
@@ -703,21 +501,21 @@ for(i in 1:3) {
 
 ### Ohlberger et al. (2016) _Ecosphere_
 
-### Jorgensen et al. (2016) _Ecology & Evolution_
+### Jorgensen et al. (2016) _Ecology &amp; Evolution_
 ]
 
 ---
 
-# Abundance & catches of groundfish
+# Abundance &amp; catches of groundfish
 
 .right.blue-text[
 ## How do spatial patterns change over time?
 ]
 
 .gray-text.right[
-### Thorson et al. (2015) *Meth* *Ecol* & *Evol*
+### Thorson et al. (2015) *Meth* *Ecol* &amp; *Evol*
 
-### Thorson et al. (2016) *Global Ecol & Biogeogr*
+### Thorson et al. (2016) *Global Ecol &amp; Biogeogr*
 
 ### Thorson et al. (2018) *Proc Royal Soc B*
 ]
@@ -828,13 +626,13 @@ background-size: 77%
 ## No randomized design
 ]
 .blue-text[
-## Different start/stop & duration
+## Different start/stop &amp; duration
 ]
 .orange-text[
-## Changing variance & correlated errors
+## Changing variance &amp; correlated errors
 ]
 .purple-text[
-## Multiple agencies & tribes
+## Multiple agencies &amp; tribes
 ]
 
 ---
@@ -854,40 +652,7 @@ background-size: contain
 
 # How much did .orange-text[advertising] increase sales?
 
-```{r sale_ts_3, echo=FALSE, dpi=300, fig.height=4.5, fig.width=8, out.height="100%", out.width="100%", fig.align='center'}
-tstar <- 9
-tt <- 20
-
-set.seed(666)
-
-x1 <- cumsum(rnorm(tt)) + 5
-
-dd <- c(rep(0,tstar), rep(1.5,20-tstar))
-x2 <- x1 + dd
-
-par(mai=c(0.9,0.9,0.1,0.1), omi=c(0,0,0,0))
-
-plot(seq(tt), x1, type="n", pch=16, las=1, 
-        xlab="", ylab="", cex.axis=1.5)
-mtext(side=1, "Time", line=3.5, cex=1.8)
-mtext(side=2, "Sales index", line=3, cex=1.8)
-
-lines(seq(tt), x1, type="o", pch=16, cex=1.2, las=1, col="darkgray", lwd=2)
-
-lines(seq(tt), x2, type="o", pch=16, cex=1.2, las=1, col="dodgerblue", lwd=2)
-
-arrows(tstar+1, x1[tstar+1]*1.02, tstar+1, x2[tstar+1]*0.982,
-       length=0.1, col="darkorange", lty="solid", lwd=3)
-text(tstar+1.75, (x1[tstar+1]+x2[tstar+1])/2, "A",
-	 cex=2, col="darkorange", adj=c(0.5,0.5))
-
-scl <- 0.07
-aB <- (par()$usr[4] - par()$usr[3])*scl
-arrows(x0=tstar,y0=par()$usr[3]-aB,y1=par()$usr[3]*0.99,
-       length=0.1, col="darkgray", xpd=TRUE, lwd=2)
-text(tstar,par()$usr[3]-aB, "T",
-	 cex=2, col="darkgray", pos=1, xpd=TRUE)
-```
+&lt;img src="safs_aul_seminar_files/figure-html/sale_ts_3-1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -895,7 +660,7 @@ text(tstar,par()$usr[3]-aB, "T",
 
 ## .blue-text.under[State model]
 
-## .blue-text[Sales]<sub><i>t</i></sub> = .blue-text[Sales]<sub><i>t</i>-1</sub> + .orange-text[Advertising]<sub><i>t</i></sub> + .gray-text[error]<sub><i>t</i></sub>
+## .blue-text[Sales]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .blue-text[Sales]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;-1&lt;/sub&gt; + .orange-text[Advertising]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + .gray-text[error]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;
 
 ---
 
@@ -903,11 +668,11 @@ text(tstar,par()$usr[3]-aB, "T",
 
 ## .blue-text.under[State model]
 
-## .blue-text[Sales]<sub><i>t</i></sub> = .blue-text[Sales]<sub><i>t</i>-1</sub> + .orange-text[Advertising]<sub><i>t</i></sub> + .gray-text[error]<sub><i>t</i></sub>
+## .blue-text[Sales]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .blue-text[Sales]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;-1&lt;/sub&gt; + .orange-text[Advertising]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + .gray-text[error]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;
 
 ## .purple-text.under[Observation model]
 
-## .purple-text[Data]<sub><i>t</i></sub> = .blue-text[Sales]<sub><i>t</i></sub> + .red-text[error]<sub><i>t</i></sub>
+## .purple-text[Data]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .blue-text[Sales]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + .red-text[error]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;
 
 ---
 
@@ -915,11 +680,11 @@ text(tstar,par()$usr[3]-aB, "T",
 
 ## .blue-text.under[State model]
 
-## .blue-text[Density]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i>-1</sub> + .orange-text[Supplementation]<sub><i>t</i></sub> + .gray-text[error]<sub><i>t</i></sub>
+## .blue-text[Density]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .blue-text[Density]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;-1&lt;/sub&gt; + .orange-text[Supplementation]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + .gray-text[error]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;
 
 ## .purple-text.under[Observation model]
 
-## .purple-text[Data]<sub><i>t</i></sub> = .blue-text[Density]<sub><i>t</i></sub> + .red-text[error]<sub><i>t</i></sub>
+## .purple-text[Data]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; = .blue-text[Density]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + .red-text[error]&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;
 
 ---
 
@@ -954,7 +719,7 @@ background-size: 130%
 ### Mean increase of only 3.3% over ~25 years
 ]
 
-.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol*]
+.citationT.gray-text[Scheuerell et al. (2015) *Ecol* &amp; *Evol*]
 
 ---
 
@@ -969,7 +734,7 @@ background-size: 130%
 ### Probability of positive effect is ~70%
 ]
 
-.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol*]
+.citationT.gray-text[Scheuerell et al. (2015) *Ecol* &amp; *Evol*]
 
 ---
 
@@ -980,7 +745,7 @@ background-size: 85%
 
 ## Common year effects overshadow .orange-text[intervention]
 
-.citationT.gray-text[Scheuerell et al. (2015) *Ecol* & *Evol*]
+.citationT.gray-text[Scheuerell et al. (2015) *Ecol* &amp; *Evol*]
 
 
 ---
@@ -1008,7 +773,7 @@ background-size: 100%
 .blue-text.right[
 ## Quarterly survey data from 1982-present
 
-## 50+ species of fish & inverts
+## 50+ species of fish &amp; inverts
 ]
 
 ---
@@ -1018,9 +783,9 @@ background-image: url(figs/seamap_zones.jpeg)
 background-position: 50% 50%
 background-size: 95%
 
-<br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Spatial management zones
+# &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Spatial management zones
 
 ---
 
@@ -1081,7 +846,7 @@ class: middle, center
 
 ## .right.blue-text[Choose model based upon raw data]
 
-### .right[Maunder & Punt (2013) _Fish Res_]
+### .right[Maunder &amp; Punt (2013) _Fish Res_]
 
 ---
 
@@ -1111,11 +876,11 @@ background-size: cover
 # Skagit River steelhead
 
 .right.blue-text[
-## Escapement, harvest & age data from 1978-2018
+## Escapement, harvest &amp; age data from 1978-2018
 ]
 
 .right.green-text[
-## Effects of streamflows & hatchery releases
+## Effects of streamflows &amp; hatchery releases
 ]
 
 ---
@@ -1232,7 +997,7 @@ class: inverse, center, middle
 # Freshwater food-webs
 
 .blue-text.right[
-## How do ecosystem processses vary by lat & lon? 
+## How do ecosystem processses vary by lat &amp; lon? 
 ]
 
 ---
@@ -1244,7 +1009,7 @@ background-size: 75%
 
 ---
 
-# Marine & freshwater food-webs
+# Marine &amp; freshwater food-webs
 
 .blue-text.right[
 ## How do species interactions change over time?
@@ -1265,6 +1030,14 @@ background-size: 90%
 
 .blue-text.right[
 ## Maximize info from monitoring while minimizing cost
+]
+
+---
+
+# Ecological portfolios
+
+.blue-text.right[
+## How do risks vs rewards change over time?
 ]
 
 ---
@@ -1307,4 +1080,39 @@ PNW: *Raven Maps*
 ---
 
 class: black-back
+    </textarea>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
